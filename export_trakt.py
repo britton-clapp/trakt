@@ -401,7 +401,8 @@ def main():
                                     'trakt_id' : data[options.type[:-1]]['ids']['trakt'],
                                     options.time : data[options.time],
                                     'season' : data[options.type[:-1]]['season'],
-                                    'episode' : data[options.type[:-1]]['number']})
+                                    'episode' : data[options.type[:-1]]['number'],
+                                    'show': data['show']['title']})
         #print export_csv
         ## Write export data into CSV file
         write_csv(options, export_csv)
